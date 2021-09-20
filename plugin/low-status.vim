@@ -1,3 +1,4 @@
+
 set laststatus=2 	" always show status line
 set statusline=
 " set statusline+=\ %{GetSLMark()} \
@@ -15,7 +16,7 @@ function! GetSLMark()
 	let mrk = bufnr('%')
 	return mrk
 endfunction
-
+"TODO remove person name from path
 function! CurDir()
     let curdir = substitute(getcwd(), '/Users/sam', "~", "g")
     return curdir
